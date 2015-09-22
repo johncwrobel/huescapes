@@ -222,8 +222,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, BridgeSelectionViewContro
       if bridgesFound.count > 0 {
         // Results were found, show options to user (from a user point of view, you should select automatically when there is only one bridge found)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let bridgeViewController = storyboard.instantiateViewControllerWithIdentifier("BridgeSelection") as BridgeSelectionViewController
-        bridgeViewController.bridgesFound = (bridgesFound as [String: String])
+        let bridgeViewController = storyboard.instantiateViewControllerWithIdentifier("BridgeSelection") as! BridgeSelectionViewController
+        bridgeViewController.bridgesFound = (bridgesFound as! [String: String])
         bridgeViewController.delegate = self
         let navController = UINavigationController(rootViewController: bridgeViewController)
         // Make it a form on iPad
@@ -266,7 +266,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, BridgeSelectionViewContro
     
     // To be certain that we own this bridge we must manually push link it. Here we display the view to do this.
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
-    let pushLinkViewController = storyboard.instantiateViewControllerWithIdentifier("BridgePushLink") as BridgePushLinkViewController
+    let pushLinkViewController = storyboard.instantiateViewControllerWithIdentifier("BridgePushLink") as! BridgePushLinkViewController
     // Make it a form on iPad
     pushLinkViewController.modalPresentationStyle = UIModalPresentationStyle.FormSheet
     pushLinkViewController.phHueSdk = phHueSdk
@@ -302,32 +302,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate, BridgeSelectionViewContro
   }
 }
 
-// MARK: - BridgeSelectionViewControllerDelegate
-extension AppDelegate: BridgeSelectionViewControllerDelegate {
-  
-  /// Delegate method for BridgeSelectionViewController which is invoked when a bridge is selected
-  func bridgeSelectedWithIpAddress(ipAddress:String, andMacAddress macAddress:String) {
-    // Removing the selection view controller takes us to the 'normal' UI view
-    window!.rootViewController! .dismissViewControllerAnimated(true, completion: nil)
-    
-    // Show a connecting view while we try to connect to the bridge
-    showLoadingViewWithText(NSLocalizedString("Connecting", comment: "Connecting text"))
-    
-    // Set the username, ipaddress and mac address, as the bridge properties that the SDK framework will use
-    phHueSdk.setBridgeToUseWithIpAddress(ipAddress, macAddress: macAddress)
-    
-    // Setting the hearbeat running will cause the SDK to regularly update the cache with the status of the bridge resources
-    let delay = 1 * Double(NSEC_PER_SEC)
-    let time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
-    dispatch_after(time, dispatch_get_main_queue()) {
-      self.enableLocalHeartbeat()
-    }
-  }
-}
 
 // MARK: - BridgePushLinkViewControllerDelegate
 extension AppDelegate: BridgePushLinkViewControllerDelegate {
   
+    func bridgeSelectedWithIpAddress(ipAddress:String, andMacAddress macAddress:String) {
+        // Removing the selection view controller takes us to the 'normal' UI view
+        window!.rootViewController! .dismissViewControllerAnimated(true, completion: nil)
+        
+        // Show a connecting view while we try to connect to the bridge
+        showLoadingViewWithText(NSLocalizedString("Connecting", comment: "Connecting text"))
+        
+        // Set the username, ipaddress and mac address, as the bridge properties that the SDK framework will use
+        phHueSdk.setBridgeToUseWithIpAddress(ipAddress, macAddress: macAddress)
+        
+        // Setting the hearbeat running will cause the SDK to regularly update the cache with the status of the bridge resources
+        let delay = 1 * Double(NSEC_PER_SEC)
+        let time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+        dispatch_after(time, dispatch_get_main_queue()) {
+            self.enableLocalHeartbeat()
+        }
+    }
+
   /// Delegate method for PHBridgePushLinkViewController which is invoked if the pushlinking was successfull
   func pushlinkSuccess() {
     // Push linking succeeded we are authenticated against the chosen bridge.
@@ -349,7 +345,7 @@ extension AppDelegate: BridgePushLinkViewControllerDelegate {
     navigationController!.dismissViewControllerAnimated(true, completion: nil)
     
     // Check which error occured
-    if error.code == Int(PUSHLINK_NO_CONNECTION.value) {
+    if error.code == Int(PUSHLINK_NO_CONNECTION.rawValue) {
       noLocalConnection()
       
       // Start local heartbeat (to see when connection comes back)

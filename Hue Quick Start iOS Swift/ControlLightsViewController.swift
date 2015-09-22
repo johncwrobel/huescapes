@@ -41,8 +41,8 @@ class ControlLightsViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
   
-  func edgesForExtendedLayout() -> UIRectEdge {
-    return (UIRectEdge.Left | UIRectEdge.Bottom | UIRectEdge.Right)
+  func edgesForExtendedLayoutfix() -> UIRectEdge {
+    return (UIRectEdge.Left.union(UIRectEdge.Bottom).union(UIRectEdge.Right))
   }
   
   func localConnection() {
@@ -73,7 +73,7 @@ class ControlLightsViewController: UIViewController {
 
       
       // Check if we are connected to the bridge right now
-      let appDelegate = (UIApplication.sharedApplication().delegate as AppDelegate)
+      let appDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
       if appDelegate.phHueSdk.localConnected() {
 
         // Show current time as last successful heartbeat time when we are connected to a bridge
@@ -90,7 +90,7 @@ class ControlLightsViewController: UIViewController {
     }
   }
   
-  @IBAction func randomizeColoursOfConnectLights(AnyObject) {
+  @IBAction func randomizeColoursOfConnectLights(_: AnyObject) {
     randomLightsButton?.enabled = false
     let cache = PHBridgeResourcesReader.readBridgeResourcesCache()
     let bridgeSendAPI = PHBridgeSendAPI()
@@ -103,14 +103,15 @@ class ControlLightsViewController: UIViewController {
       
       let lightState = PHLightState()
       
-      if light.type.value == DIM_LIGHT.value {
-        // Lux bulbs just get a random brightness
-        lightState.brightness = Int(arc4random()) % 254
-      } else {
+//      if light.type.value == DIM_LIGHT.rawValue {
+//        // Lux bulbs just get a random brightness
+//        lightState.brightness = Int(arc4random()) % 254
+//      } else {
         lightState.hue = Int(arc4random()) % maxHue
-        lightState.brightness = 254
+     //   lightState.brightness = 254
+        lightState.brightness = Int(arc4random()) % 254
         lightState.saturation = 254
-      }
+//      }
       
       // Send lightstate to light
       bridgeSendAPI.updateLightStateForId(light.identifier, withLightState: lightState, completionHandler: { (errors: [AnyObject]!) -> () in
@@ -126,7 +127,7 @@ class ControlLightsViewController: UIViewController {
   }
   
   func findNewBridgeButtonAction() {
-    let appDelegate = (UIApplication.sharedApplication().delegate as AppDelegate)
+    let appDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
     appDelegate.searchForBridgeLocal()
   }
     

@@ -37,7 +37,7 @@ class BridgeSelectionViewController: UITableViewController {
   
   func refreshButtonClicked(sender: UIBarButtonItem) {
     navigationController?.dismissViewControllerAnimated(true, completion: nil)
-    (UIApplication.sharedApplication().delegate as AppDelegate).searchForBridgeLocal()
+    (UIApplication.sharedApplication().delegate as! AppDelegate).searchForBridgeLocal()
   }
   
   // MARK: - Table view data source
@@ -56,7 +56,7 @@ class BridgeSelectionViewController: UITableViewController {
     
     // Sort bridges by mac address
     let keys = [String](bridgesFound!.keys)
-    let sortedKeys = keys.sorted { $0.caseInsensitiveCompare($1) == NSComparisonResult.OrderedAscending }
+    let sortedKeys = keys.sort { $0.caseInsensitiveCompare($1) == NSComparisonResult.OrderedAscending }
     
     let mac = sortedKeys[indexPath.row]
     let ip = bridgesFound![mac]
@@ -76,7 +76,7 @@ class BridgeSelectionViewController: UITableViewController {
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     // Sort bridges by mac address
     let keys = [String](bridgesFound!.keys)
-    let sortedKeys = keys.sorted { $0.caseInsensitiveCompare($1) == NSComparisonResult.OrderedAscending }
+    let sortedKeys = keys.sort { $0.caseInsensitiveCompare($1) == NSComparisonResult.OrderedAscending }
     
     // The choice of bridge to use is made, store the mac and ip address for this bridge
     
