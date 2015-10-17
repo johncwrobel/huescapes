@@ -30,7 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DE625B511A7078D8004296E9 /* Hue Quick Start iOS Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hue Quick Start iOS Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE625B511A7078D8004296E9 /* Huescapes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Huescapes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE625B551A7078D8004296E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE625B561A7078D8004296E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE625B5E1A7078D8004296E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		DE625B521A7078D8004296E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE625B511A7078D8004296E9 /* Hue Quick Start iOS Swift.app */,
+				DE625B511A7078D8004296E9 /* Huescapes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,9 +161,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DE625B501A7078D8004296E9 /* Hue Quick Start iOS Swift */ = {
+		DE625B501A7078D8004296E9 /* Huescapes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE625B731A7078D8004296E9 /* Build configuration list for PBXNativeTarget "Hue Quick Start iOS Swift" */;
+			buildConfigurationList = DE625B731A7078D8004296E9 /* Build configuration list for PBXNativeTarget "Huescapes" */;
 			buildPhases = (
 				DE625B4D1A7078D8004296E9 /* Sources */,
 				DE625B4E1A7078D8004296E9 /* Frameworks */,
@@ -173,9 +173,9 @@
 			);
 			dependencies = (
 			);
-			name = "Hue Quick Start iOS Swift";
+			name = Huescapes;
 			productName = "Hue Quick Start iOS Swift";
-			productReference = DE625B511A7078D8004296E9 /* Hue Quick Start iOS Swift.app */;
+			productReference = DE625B511A7078D8004296E9 /* Huescapes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -195,7 +195,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DE625B4C1A7078D8004296E9 /* Build configuration list for PBXProject "Hue Quick Start iOS Swift" */;
+			buildConfigurationList = DE625B4C1A7078D8004296E9 /* Build configuration list for PBXProject "Huescapes" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -208,7 +208,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DE625B501A7078D8004296E9 /* Hue Quick Start iOS Swift */,
+				DE625B501A7078D8004296E9 /* Huescapes */,
 			);
 		};
 /* End PBXProject section */
@@ -369,7 +369,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.kevindew.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Huescapes;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Hue Quick Start iOS Swift/Hue Quick Start iOS Swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -391,7 +391,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.kevindew.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Huescapes;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Hue Quick Start iOS Swift/Hue Quick Start iOS Swift-Bridging-Header.h";
 			};
@@ -400,7 +400,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DE625B4C1A7078D8004296E9 /* Build configuration list for PBXProject "Hue Quick Start iOS Swift" */ = {
+		DE625B4C1A7078D8004296E9 /* Build configuration list for PBXProject "Huescapes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE625B711A7078D8004296E9 /* Debug */,
@@ -409,7 +409,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE625B731A7078D8004296E9 /* Build configuration list for PBXNativeTarget "Hue Quick Start iOS Swift" */ = {
+		DE625B731A7078D8004296E9 /* Build configuration list for PBXNativeTarget "Huescapes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE625B741A7078D8004296E9 /* Debug */,

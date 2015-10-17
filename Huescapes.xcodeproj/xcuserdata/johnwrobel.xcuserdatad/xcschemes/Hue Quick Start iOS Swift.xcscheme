@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DE625B501A7078D8004296E9"
-               BuildableName = "Hue Quick Start iOS Swift.app"
-               BlueprintName = "Hue Quick Start iOS Swift"
-               ReferencedContainer = "container:Hue Quick Start iOS Swift.xcodeproj">
+               BuildableName = "Huescapes.app"
+               BlueprintName = "Huescapes"
+               ReferencedContainer = "container:Huescapes.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DE625B501A7078D8004296E9"
-            BuildableName = "Hue Quick Start iOS Swift.app"
-            BlueprintName = "Hue Quick Start iOS Swift"
-            ReferencedContainer = "container:Hue Quick Start iOS Swift.xcodeproj">
+            BuildableName = "Huescapes.app"
+            BlueprintName = "Huescapes"
+            ReferencedContainer = "container:Huescapes.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DE625B501A7078D8004296E9"
-            BuildableName = "Hue Quick Start iOS Swift.app"
-            BlueprintName = "Hue Quick Start iOS Swift"
-            ReferencedContainer = "container:Hue Quick Start iOS Swift.xcodeproj">
+            BuildableName = "Huescapes.app"
+            BlueprintName = "Huescapes"
+            ReferencedContainer = "container:Huescapes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DE625B501A7078D8004296E9"
-            BuildableName = "Hue Quick Start iOS Swift.app"
-            BlueprintName = "Hue Quick Start iOS Swift"
-            ReferencedContainer = "container:Hue Quick Start iOS Swift.xcodeproj">
+            BuildableName = "Huescapes.app"
+            BlueprintName = "Huescapes"
+            ReferencedContainer = "container:Huescapes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

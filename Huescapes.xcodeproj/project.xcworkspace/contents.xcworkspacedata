@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Hue Quick Start iOS Swift.xcodeproj">
+      location = "self:/Users/johnwrobel/Desktop/huescapes/Huescapes.xcodeproj">
    </FileRef>
 </Workspace>
