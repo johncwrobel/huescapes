@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="forests-why-matter_63516847" translatesAutoresizingMaskIntoConstraints="NO" id="bcr-gK-7M6">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="forest" translatesAutoresizingMaskIntoConstraints="NO" id="bcr-gK-7M6">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <animations/>
                 </imageView>
@@ -24,6 +24,6 @@
         </view>
     </objects>
     <resources>
-        <image name="forests-why-matter_63516847" width="1000" height="600"/>
+        <image name="forest" width="1000" height="600"/>
     </resources>
 </document>

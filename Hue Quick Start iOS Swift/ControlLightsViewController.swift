@@ -41,7 +41,7 @@ class ControlLightsViewController: UIViewController {
     self.scrollView.addSubview(vc1.view)
     vc1.didMoveToParentViewController(self)
     
-    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width * 3, self.view.frame.size.height)
+    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width * 2, self.view.frame.size.height)
     
     let notificationManager = PHNotificationManager.defaultManager()
     // Register for the local heartbeat notifications

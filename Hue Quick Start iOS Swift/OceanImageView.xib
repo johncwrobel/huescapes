@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="o-WORLD-OCEANS-DAY-2013-facebook" translatesAutoresizingMaskIntoConstraints="NO" id="uSC-Px-eiI">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ocean" translatesAutoresizingMaskIntoConstraints="NO" id="uSC-Px-eiI">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <animations/>
                 </imageView>
@@ -24,6 +24,6 @@
         </view>
     </objects>
     <resources>
-        <image name="o-WORLD-OCEANS-DAY-2013-facebook" width="1536" height="1023"/>
+        <image name="ocean" width="1536" height="1023"/>
     </resources>
 </document>
