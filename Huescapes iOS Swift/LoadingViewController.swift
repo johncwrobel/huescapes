@@ -2,7 +2,6 @@
 //  LoadingViewController.swift
 //  Huescapes iOS Swift
 //
-//
 
 import UIKit
 
