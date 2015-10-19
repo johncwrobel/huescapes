@@ -37,7 +37,7 @@
 		DE625B601A7078D8004296E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DE625B631A7078D8004296E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DE625B931A70794A004296E9 /* HueSDK_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HueSDK_iOS.framework; sourceTree = "<group>"; };
-		DE625B9E1A707BC3004296E9 /* Hue Quick Start iOS Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hue Quick Start iOS Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		DE625B9E1A707BC3004296E9 /* Huescapes iOS Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Huescapes iOS Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		DE625BA21A707BE7004296E9 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
 		DE625BA31A707BE7004296E9 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
 		DE625BA41A707BE7004296E9 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 				DE625B601A7078D8004296E9 /* Images.xcassets */,
 				DE625B621A7078D8004296E9 /* LaunchScreen.xib */,
 				DE625B541A7078D8004296E9 /* Supporting Files */,
-				DE625B9E1A707BC3004296E9 /* Hue Quick Start iOS Swift-Bridging-Header.h */,
+				DE625B9E1A707BC3004296E9 /* Huescapes iOS Swift-Bridging-Header.h */,
 				DE625BB81A707E59004296E9 /* ControlLightsViewController.swift */,
 				FF09F5E11BD2FF6300692C35 /* ForestImageViewController.swift */,
 				FF09F5E21BD2FF6300692C35 /* ForestImageView.xib */,
@@ -110,7 +110,7 @@
 				DE6712821A79B8EE00ED6035 /* LoadingViewController.swift */,
 			);
 			name = Huescapes;
-			path = "Hue Quick Start iOS Swift";
+			path = "Huescapes iOS Swift";
 			sourceTree = "<group>";
 		};
 		DE625B541A7078D8004296E9 /* Supporting Files */ = {
@@ -366,13 +366,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "Hue Quick Start iOS Swift/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Huescapes iOS Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "me.kevindew.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = Huescapes;
 				PRODUCT_NAME = Huescapes;
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Hue Quick Start iOS Swift/Hue Quick Start iOS Swift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Huescapes iOS Swift/Huescapes iOS Swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -388,13 +388,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "Hue Quick Start iOS Swift/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Huescapes iOS Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "me.kevindew.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = Huescapes;
 				PRODUCT_NAME = Huescapes;
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Hue Quick Start iOS Swift/Hue Quick Start iOS Swift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Huescapes iOS Swift/Huescapes iOS Swift-Bridging-Header.h";
 			};
 			name = Release;
 		};
