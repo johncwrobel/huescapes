@@ -1,9 +1,7 @@
 //
 //  LoadingViewController.swift
-//  Hue Quick Start iOS Swift
+//  Huescapes iOS Swift
 //
-//  Created by Kevin Dew on 29/01/2015.
-//  Copyright (c) 2015 KevinDew. All rights reserved.
 //
 
 import UIKit

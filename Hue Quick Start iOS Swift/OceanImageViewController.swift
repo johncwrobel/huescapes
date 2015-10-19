@@ -1,9 +1,8 @@
 //
 //  OceanImageViewController.swift
-//  Hue Quick Start iOS Swift
+//  Huescapes iOS Swift
 //
 //  Created by John Wrobel on 10/17/15.
-//  Copyright © 2015 KevinDew. All rights reserved.
 //
 
 import UIKit

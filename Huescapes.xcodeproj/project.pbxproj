@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				DE625B791A7078F5004296E9 /* Framework */,
-				DE625B531A7078D8004296E9 /* Hue Quick Start iOS Swift */,
+				DE625B531A7078D8004296E9 /* Huescapes */,
 				DE625B521A7078D8004296E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +91,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DE625B531A7078D8004296E9 /* Hue Quick Start iOS Swift */ = {
+		DE625B531A7078D8004296E9 /* Huescapes */ = {
 			isa = PBXGroup;
 			children = (
 				DE625B561A7078D8004296E9 /* AppDelegate.swift */,
@@ -109,6 +109,7 @@
 				DE6712801A79B7A300ED6035 /* BridgeSelectionViewController.swift */,
 				DE6712821A79B8EE00ED6035 /* LoadingViewController.swift */,
 			);
+			name = Huescapes;
 			path = "Hue Quick Start iOS Swift";
 			sourceTree = "<group>";
 		};
@@ -187,7 +188,7 @@
 				LastSwiftMigration = 0710;
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
-				ORGANIZATIONNAME = KevinDew;
+				ORGANIZATIONNAME = Huescapes;
 				TargetAttributes = {
 					DE625B501A7078D8004296E9 = {
 						CreatedOnToolsVersion = 6.1.1;
