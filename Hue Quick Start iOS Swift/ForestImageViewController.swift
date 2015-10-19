@@ -1,5 +1,5 @@
 //
-//  ViewController0.swift
+//  ForestImageViewController.swift
 //  Hue Quick Start iOS Swift
 //
 //  Created by John Wrobel on 10/17/15.

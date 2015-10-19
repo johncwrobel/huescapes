@@ -1,5 +1,5 @@
 //
-//  ViewController1.swift
+//  OceanImageViewController.swift
 //  Hue Quick Start iOS Swift
 //
 //  Created by John Wrobel on 10/17/15.
