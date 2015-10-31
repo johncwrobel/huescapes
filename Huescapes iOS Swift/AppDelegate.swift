@@ -1,7 +1,11 @@
 //
 //  AppDelegate.swift
+<<<<<<< HEAD
 //  
 //  Ported from: https://github.com/PhilipsHue/PhilipsHueSDK-iOS-OSX/blob/master/QuickStartApp_iOS/HueQuickStartApp-iOS/PHAppDelegate.m
+=======
+//  Huescapes iOS Swift
+>>>>>>> origin/adding_preset_scenes
 //
 
 import UIKit

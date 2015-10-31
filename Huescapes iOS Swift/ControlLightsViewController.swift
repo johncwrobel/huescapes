@@ -2,9 +2,6 @@
 //  ControlLightsViewController.swift
 //  Huescapes iOS Swift
 //
-//  Ported from https://github.com/PhilipsHue/PhilipsHueSDK-iOS-OSX/blob/master/QuickStartApp_iOS/HueQuickStartApp-iOS/PHControlLightsViewController.m
-//
-//
 
 import UIKit
 

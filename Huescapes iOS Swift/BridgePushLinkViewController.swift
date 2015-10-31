@@ -1,9 +1,6 @@
 //
 //  BridgePushLinkViewController.swift
 //  Huescapes iOS Swift
-// 
-//  Ported from: https://github.com/PhilipsHue/PhilipsHueSDK-iOS-OSX/blob/master/QuickStartApp_iOS/SDKWizard/PHBridgePushLinkViewController.m
-//
 //
 
 import UIKit
