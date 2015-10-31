@@ -16,30 +16,31 @@ class ControlLightsViewController: UIViewController {
   @IBOutlet var bridgeIpLabel: UILabel?
   @IBOutlet var bridgeLastHeartbeatLabel: UILabel?
   @IBOutlet var randomLightsButton: UIButton?
+    @IBOutlet weak var testbutt: UIButton!
   @IBOutlet weak var scrollView: UIScrollView! //this handles/holds our scenes (their pictures, specifically)
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     //create reference to first preset image
-    let vc0 = ForestImageViewController(nibName: "ForestImageView", bundle: nil)
+   // let vc0 = ForestImageViewController(nibName: "ForestImageView", bundle: nil)
     //add it to the scrollView
-    self.addChildViewController(vc0)
-    self.scrollView.addSubview(vc0.view)
-    vc0.didMoveToParentViewController(self)
+   // self.addChildViewController(vc0)
+   // self.scrollView.addSubview(vc0.view)
+   // vc0.didMoveToParentViewController(self)
     
     //create reference to second preset image
-    let vc1 = OceanImageViewController(nibName: "OceanImageView", bundle: nil)
+   // let vc1 = OceanImageViewController(nibName: "OceanImageView", bundle: nil)
     //make it appear as the first image to the right
-    var frame1 = vc1.view.frame
-    frame1.origin.x = self.view.frame.size.width //it starts being drawn where the first image ends. Multiply by constant for consecutive screens
-    vc1.view.frame = frame1
+  //  var frame1 = vc1.view.frame
+   // frame1.origin.x = self.view.frame.size.width //it starts being drawn where the first image ends. Multiply by constant for consecutive screens
+   // vc1.view.frame = frame1
     //add it to the scrollView
-    self.addChildViewController(vc1)
-    self.scrollView.addSubview(vc1.view)
-    vc1.didMoveToParentViewController(self)
+   // self.addChildViewController(vc1)
+   // self.scrollView.addSubview(vc1.view)
+   // vc1.didMoveToParentViewController(self)
     
-    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width * 2, self.view.frame.size.height)
+   // self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width * 2, self.view.frame.size.height)
     
     let notificationManager = PHNotificationManager.defaultManager()
     // Register for the local heartbeat notifications
@@ -109,7 +110,7 @@ class ControlLightsViewController: UIViewController {
     }
   }
   
-  @IBAction func randomizeColoursOfConnectLights(_: AnyObject) {
+  @IBAction public func randomizeColoursOfConnectLights(_: AnyObject) {
     randomLightsButton?.enabled = false
     let cache = PHBridgeResourcesReader.readBridgeResourcesCache()
     let bridgeSendAPI = PHBridgeSendAPI()

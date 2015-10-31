@@ -23,10 +23,8 @@
 		DE67127D1A79B1B500ED6035 /* BridgePushLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE67127C1A79B1B500ED6035 /* BridgePushLinkViewController.swift */; };
 		DE6712811A79B7A300ED6035 /* BridgeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6712801A79B7A300ED6035 /* BridgeSelectionViewController.swift */; };
 		DE6712831A79B8EE00ED6035 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6712821A79B8EE00ED6035 /* LoadingViewController.swift */; };
-		FF09F5E31BD2FF6300692C35 /* ForestImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF09F5E11BD2FF6300692C35 /* ForestImageViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		FF09F5E41BD2FF6300692C35 /* ForestImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF09F5E21BD2FF6300692C35 /* ForestImageView.xib */; settings = {ASSET_TAGS = (); }; };
-		FF09F5EB1BD301B200692C35 /* OceanImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF09F5E91BD301B200692C35 /* OceanImageViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		FF09F5EC1BD301B200692C35 /* OceanImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF09F5EA1BD301B200692C35 /* OceanImageView.xib */; settings = {ASSET_TAGS = (); }; };
+		FF09F5E31BD2FF6300692C35 /* ForestImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF09F5E11BD2FF6300692C35 /* ForestImageViewController.swift */; };
+		FF09F5EB1BD301B200692C35 /* OceanImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF09F5E91BD301B200692C35 /* OceanImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,9 +55,7 @@
 		DE6712801A79B7A300ED6035 /* BridgeSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeSelectionViewController.swift; sourceTree = "<group>"; };
 		DE6712821A79B8EE00ED6035 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		FF09F5E11BD2FF6300692C35 /* ForestImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForestImageViewController.swift; sourceTree = "<group>"; };
-		FF09F5E21BD2FF6300692C35 /* ForestImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForestImageView.xib; sourceTree = "<group>"; };
 		FF09F5E91BD301B200692C35 /* OceanImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OceanImageViewController.swift; sourceTree = "<group>"; };
-		FF09F5EA1BD301B200692C35 /* OceanImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OceanImageView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +98,7 @@
 				DE625B9E1A707BC3004296E9 /* Huescapes iOS Swift-Bridging-Header.h */,
 				DE625BB81A707E59004296E9 /* ControlLightsViewController.swift */,
 				FF09F5E11BD2FF6300692C35 /* ForestImageViewController.swift */,
-				FF09F5E21BD2FF6300692C35 /* ForestImageView.xib */,
 				FF09F5E91BD301B200692C35 /* OceanImageViewController.swift */,
-				FF09F5EA1BD301B200692C35 /* OceanImageView.xib */,
 				DE67127C1A79B1B500ED6035 /* BridgePushLinkViewController.swift */,
 				DE6712801A79B7A300ED6035 /* BridgeSelectionViewController.swift */,
 				DE6712821A79B8EE00ED6035 /* LoadingViewController.swift */,
@@ -220,10 +214,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE625B5F1A7078D8004296E9 /* Main.storyboard in Resources */,
-				FF09F5EC1BD301B200692C35 /* OceanImageView.xib in Resources */,
 				DE625B641A7078D8004296E9 /* LaunchScreen.xib in Resources */,
 				DE625B611A7078D8004296E9 /* Images.xcassets in Resources */,
-				FF09F5E41BD2FF6300692C35 /* ForestImageView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
