@@ -103,10 +103,14 @@
                                     <rect key="frame" x="395" y="145" width="145" height="21"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4I-fK-dCn">
-                                <rect key="frame" x="279" y="349" width="46" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HuescapesIcon" translatesAutoresizingMaskIntoConstraints="NO" id="xMF-xA-6CF">
+                                <rect key="frame" x="20" y="232" width="240" height="237"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4I-fK-dCn">
+                                <rect key="frame" x="233" y="248" width="202" height="91"/>
+                                <animations/>
+                                <state key="normal" title="ENTER HUE SCAPES"/>
                                 <connections>
                                     <segue destination="IDs-0r-Dgh" kind="presentation" id="M3S-O3-jnx"/>
                                 </connections>
@@ -283,7 +287,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k8c-YM-4cC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2505" y="479"/>
+            <point key="canvasLocation" x="2200" y="376"/>
         </scene>
         <!--Bridge Push Link View Controller-->
         <scene sceneID="2Jp-7z-POn">
@@ -312,7 +316,7 @@
                                 </variation>
                             </progressView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="press_smartbridge" translatesAutoresizingMaskIntoConstraints="NO" id="oaw-rx-7O4">
-                                <rect key="frame" x="180" y="75" width="240" height="289"/>
+                                <rect key="frame" x="203" y="149" width="240" height="289"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="366" id="B2t-u7-8JS"/>
@@ -444,6 +448,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="HuescapesIcon" width="1024" height="1024"/>
         <image name="forest" width="1000" height="600"/>
         <image name="ocean" width="1536" height="1023"/>
         <image name="press_smartbridge" width="516" height="475"/>

@@ -10,7 +10,6 @@
 		DE625B571A7078D8004296E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE625B561A7078D8004296E9 /* AppDelegate.swift */; };
 		DE625B5F1A7078D8004296E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE625B5D1A7078D8004296E9 /* Main.storyboard */; };
 		DE625B611A7078D8004296E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE625B601A7078D8004296E9 /* Images.xcassets */; };
-		DE625B641A7078D8004296E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE625B621A7078D8004296E9 /* LaunchScreen.xib */; };
 		DE625B941A70794A004296E9 /* HueSDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE625B931A70794A004296E9 /* HueSDK_iOS.framework */; };
 		DE625BB11A707BE7004296E9 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = DE625BA31A707BE7004296E9 /* DDAbstractDatabaseLogger.m */; };
 		DE625BB21A707BE7004296E9 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = DE625BA51A707BE7004296E9 /* DDASLLogger.m */; };
@@ -33,7 +32,6 @@
 		DE625B561A7078D8004296E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE625B5E1A7078D8004296E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE625B601A7078D8004296E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		DE625B631A7078D8004296E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DE625B931A70794A004296E9 /* HueSDK_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HueSDK_iOS.framework; sourceTree = "<group>"; };
 		DE625B9E1A707BC3004296E9 /* Huescapes iOS Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Huescapes iOS Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		DE625BA21A707BE7004296E9 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 				DE625B561A7078D8004296E9 /* AppDelegate.swift */,
 				DE625B5D1A7078D8004296E9 /* Main.storyboard */,
 				DE625B601A7078D8004296E9 /* Images.xcassets */,
-				DE625B621A7078D8004296E9 /* LaunchScreen.xib */,
 				DE625B541A7078D8004296E9 /* Supporting Files */,
 				DE625B9E1A707BC3004296E9 /* Huescapes iOS Swift-Bridging-Header.h */,
 				DE625BB81A707E59004296E9 /* ControlLightsViewController.swift */,
@@ -214,7 +211,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE625B5F1A7078D8004296E9 /* Main.storyboard in Resources */,
-				DE625B641A7078D8004296E9 /* LaunchScreen.xib in Resources */,
 				DE625B611A7078D8004296E9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,14 +248,6 @@
 				DE625B5E1A7078D8004296E9 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DE625B621A7078D8004296E9 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DE625B631A7078D8004296E9 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
