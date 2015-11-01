@@ -24,6 +24,7 @@
 		DE6712831A79B8EE00ED6035 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6712821A79B8EE00ED6035 /* LoadingViewController.swift */; };
 		FF09F5E31BD2FF6300692C35 /* ForestImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF09F5E11BD2FF6300692C35 /* ForestImageViewController.swift */; };
 		FF09F5EB1BD301B200692C35 /* OceanImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF09F5E91BD301B200692C35 /* OceanImageViewController.swift */; };
+		FFF30E751BE5AAB90044358F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFF30E741BE5AAB90044358F /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		DE6712821A79B8EE00ED6035 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		FF09F5E11BD2FF6300692C35 /* ForestImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForestImageViewController.swift; sourceTree = "<group>"; };
 		FF09F5E91BD301B200692C35 /* OceanImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OceanImageViewController.swift; sourceTree = "<group>"; };
+		FFF30E741BE5AAB90044358F /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				FF09F5E11BD2FF6300692C35 /* ForestImageViewController.swift */,
 				FF09F5E91BD301B200692C35 /* OceanImageViewController.swift */,
 				DE67127C1A79B1B500ED6035 /* BridgePushLinkViewController.swift */,
+				FFF30E741BE5AAB90044358F /* LaunchScreen.xib */,
 				DE6712801A79B7A300ED6035 /* BridgeSelectionViewController.swift */,
 				DE6712821A79B8EE00ED6035 /* LoadingViewController.swift */,
 			);
@@ -211,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE625B5F1A7078D8004296E9 /* Main.storyboard in Resources */,
+				FFF30E751BE5AAB90044358F /* LaunchScreen.xib in Resources */,
 				DE625B611A7078D8004296E9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
