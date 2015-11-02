@@ -38,7 +38,7 @@ class ForestImageViewController: UIViewController {
             //        // Lux bulbs just get a random brightness
             //        lightState.brightness = Int(arc4random()) % 254
             //      } else {
-            lightState.hue = 25500
+            lightState.hue = 0
             //   lightState.brightness = 254
             lightState.brightness = Int(arc4random()) % 254
             lightState.saturation = 254

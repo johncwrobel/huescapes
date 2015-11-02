@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lI7-Hs-0li">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lI7-Hs-0li">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -104,7 +104,7 @@
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4I-fK-dCn">
-                                <rect key="frame" x="233" y="248" width="202" height="91"/>
+                                <rect key="frame" x="20" y="243" width="202" height="91"/>
                                 <animations/>
                                 <state key="normal" title="ENTER HUE SCAPES"/>
                                 <connections>
@@ -190,23 +190,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ocean" translatesAutoresizingMaskIntoConstraints="NO" id="CGD-6L-L00">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlj-Pk-lvG">
+                                <rect key="frame" x="260" y="499" width="71" height="93"/>
                                 <animations/>
-                                <gestureRecognizers/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8W-iR-Qju">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="HOT LAVA">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="rrR-6N-4S6" kind="presentation" modalTransitionStyle="flipHorizontal" id="dXs-a9-avI"/>
+                                    <segue destination="rrR-6N-4S6" kind="presentation" modalTransitionStyle="crossDissolve" id="UVW-oV-hIM"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="forest view" translatesAutoresizingMaskIntoConstraints="NO" id="GZB-bx-GfS">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="GZB-bx-GfS" firstAttribute="top" secondItem="O1u-l5-UAQ" secondAttribute="topMargin" constant="20" id="0bk-H6-eBS"/>
+                            <constraint firstItem="GZB-bx-GfS" firstAttribute="leading" secondItem="O1u-l5-UAQ" secondAttribute="leadingMargin" constant="-20" id="7Tk-Gf-Fac"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GZB-bx-GfS" secondAttribute="trailing" constant="-20" id="Z0G-ke-Dpw"/>
+                            <constraint firstItem="9sL-Nu-tcK" firstAttribute="top" secondItem="GZB-bx-GfS" secondAttribute="bottom" id="inv-ya-UUx"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fIF-On-6eq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -225,13 +232,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="forest" translatesAutoresizingMaskIntoConstraints="NO" id="Ybz-5o-BQB">
-                                <rect key="frame" x="0.0" y="20" width="600" height="600"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lava view" translatesAutoresizingMaskIntoConstraints="NO" id="Ybz-5o-BQB">
+                                <rect key="frame" x="-10" y="28" width="600" height="600"/>
                                 <animations/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4w-cE-F0f">
+                                <rect key="frame" x="7" y="465" width="146" height="182"/>
+                                <animations/>
+                                <state key="normal" title=" ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IDs-0r-Dgh" kind="presentation" modalTransitionStyle="crossDissolve" id="Agy-Y0-jIQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ybz-5o-BQB" secondAttribute="trailing" constant="-20" id="4uK-uE-dFf"/>
+                            <constraint firstItem="Ybz-5o-BQB" firstAttribute="top" secondItem="eSr-g9-wzG" secondAttribute="bottom" constant="10" id="McS-XE-ppr"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Ybz-5o-BQB" secondAttribute="bottom" id="SeG-3v-cHc"/>
+                            <constraint firstItem="Ybz-5o-BQB" firstAttribute="leading" secondItem="yFe-hO-lax" secondAttribute="leadingMargin" constant="-20" id="nXt-yl-86V"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="blR-d3-yyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -249,14 +272,14 @@
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="47J-DG-SC8" detailTextLabel="JXj-FS-rxZ" style="IBUITableViewCellStyleSubtitle" id="jQZ-mh-WLe">
-                                <rect key="frame" x="0.0" y="50" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="49.5" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jQZ-mh-WLe" id="Zcj-Xr-al8">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="47J-DG-SC8">
-                                            <rect key="frame" x="15" y="5" width="32" height="20"/>
+                                            <rect key="frame" x="15" y="6" width="31.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -264,7 +287,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JXj-FS-rxZ">
-                                            <rect key="frame" x="15" y="25" width="41" height="14"/>
+                                            <rect key="frame" x="15" y="25.5" width="40.5" height="13.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -446,8 +469,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="forest" width="1000" height="600"/>
-        <image name="ocean" width="1536" height="1023"/>
+        <image name="forest view" width="750" height="1335"/>
+        <image name="lava view" width="746" height="1333"/>
         <image name="press_smartbridge" width="516" height="475"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Agy-Y0-jIQ"/>
+    </inferredMetricsTieBreakers>
 </document>
