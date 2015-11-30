@@ -7,16 +7,16 @@
 
 import UIKit
 
-class ForestImageViewController: UIViewController {
-
+class ForestView: UIViewController {
+    
     override func viewDidLoad() {
         makeGreen()
         super.viewDidLoad()
         
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -38,7 +38,7 @@ class ForestImageViewController: UIViewController {
             //        // Lux bulbs just get a random brightness
             //        lightState.brightness = Int(arc4random()) % 254
             //      } else {
-            lightState.hue = 0
+            lightState.hue = 25500
             //   lightState.brightness = 254
             lightState.brightness = Int(arc4random()) % 254
             lightState.saturation = 254
@@ -55,15 +55,15 @@ class ForestImageViewController: UIViewController {
             
         }
     }
-
+    
     /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
     }
     */
-
+    
 }
