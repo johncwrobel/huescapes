@@ -44,7 +44,7 @@ class ForestView: UIViewController {
                 continue
             }
 
-            
+             
             let lightState = PHLightState()
         
             //      if light.type.value == DIM_LIGHT.rawValue {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0CBF8F1C0E5F6200D9596F /* newScene.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A0CBF8E1C0E5F6200D9596F /* newScene.jpg */; };
+		3A0CBF931C0E60B800D9596F /* IMG_2010.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 3A0CBF921C0E60B800D9596F /* IMG_2010.JPG */; };
 		3A539DDA1C0BE1F500F24A0C /* LavaViewPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A539DD91C0BE1F500F24A0C /* LavaViewPicker.swift */; };
 		3AAFBE9D1C0BF573007A935E /* ForestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAFBE9C1C0BF573007A935E /* ForestView.swift */; };
 		3AD2D5951C0BE4DB0016EE17 /* LavaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2D5941C0BE4DB0016EE17 /* LavaViewController.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A0CBF8E1C0E5F6200D9596F /* newScene.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = newScene.jpg; sourceTree = "<group>"; };
+		3A0CBF921C0E60B800D9596F /* IMG_2010.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2010.JPG; sourceTree = "<group>"; };
 		3A539DD91C0BE1F500F24A0C /* LavaViewPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LavaViewPicker.swift; path = ../LavaViewPicker.swift; sourceTree = "<group>"; };
 		3AAFBE9C1C0BF573007A935E /* ForestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForestView.swift; path = ../ForestView.swift; sourceTree = "<group>"; };
 		3AD2D5941C0BE4DB0016EE17 /* LavaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LavaViewController.swift; sourceTree = "<group>"; };
@@ -94,7 +98,9 @@
 			children = (
 				DE625B561A7078D8004296E9 /* AppDelegate.swift */,
 				DE625B5D1A7078D8004296E9 /* Main.storyboard */,
+				3A0CBF921C0E60B800D9596F /* IMG_2010.JPG */,
 				DE625B601A7078D8004296E9 /* Images.xcassets */,
+				3A0CBF8E1C0E5F6200D9596F /* newScene.jpg */,
 				DE625B541A7078D8004296E9 /* Supporting Files */,
 				DE625B9E1A707BC3004296E9 /* Huescapes iOS Swift-Bridging-Header.h */,
 				3AAFBE9C1C0BF573007A935E /* ForestView.swift */,
@@ -218,7 +224,9 @@
 			files = (
 				DE625B5F1A7078D8004296E9 /* Main.storyboard in Resources */,
 				FFF30E751BE5AAB90044358F /* LaunchScreen.xib in Resources */,
+				3A0CBF931C0E60B800D9596F /* IMG_2010.JPG in Resources */,
 				DE625B611A7078D8004296E9 /* Images.xcassets in Resources */,
+				3A0CBF8F1C0E5F6200D9596F /* newScene.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

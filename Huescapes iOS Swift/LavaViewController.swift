@@ -32,6 +32,7 @@ redTimer.invalidate()    }
         // Dispose of any resources that can be recreated.
     }
     
+    
     @IBAction func makeRed() {
         let cache = PHBridgeResourcesReader.readBridgeResourcesCache()
         let bridgeSendAPI = PHBridgeSendAPI()
