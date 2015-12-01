@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import Foundation
 
 class ForestView: UIViewController {
     
     override func viewDidLoad() {
-        makeGreen()
+        var makeGreenTimer = NSTimer.scheduledTimerWithTimeInterval(5.0, target: self, selector: Selector("makeGreen"), userInfo: nil, repeats: true)
+
         super.viewDidLoad()
         
         
@@ -23,6 +25,7 @@ class ForestView: UIViewController {
     }
     
     @IBAction func makeGreen() {
+        print("Making green")
         let cache = PHBridgeResourcesReader.readBridgeResourcesCache()
         let bridgeSendAPI = PHBridgeSendAPI()
         

@@ -12,7 +12,7 @@ class LavaViewController: UIViewController {
     
     
     override func viewDidLoad() {
-        makeRed()
+        var makeRedTimer = NSTimer.scheduledTimerWithTimeInterval(5.0, target: self, selector: Selector("makeRed"), userInfo: nil, repeats: true)
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
@@ -35,15 +35,11 @@ class LavaViewController: UIViewController {
             
             let lightState = PHLightState()
             
-            //      if light.type.value == DIM_LIGHT.rawValue {
-            //        // Lux bulbs just get a random brightness
-            //        lightState.brightness = Int(arc4random()) % 254
-            //      } else {
-            lightState.hue = 12000
-            //   lightState.brightness = 254
+            
+            lightState.hue = 0
             lightState.brightness = Int(arc4random()) % 254
             lightState.saturation = 254
-            //      }
+
             
             // Send lightstate to light
             bridgeSendAPI.updateLightStateForId(light.identifier, withLightState: lightState, completionHandler: { (errors: [AnyObject]!) -> () in
