@@ -10,14 +10,23 @@ import Foundation
 
 class ForestView: UIViewController {
     
+       var greenTimer = NSTimer()
+    
     override func viewDidLoad() {
-        var makeGreenTimer = NSTimer.scheduledTimerWithTimeInterval(5.0, target: self, selector: Selector("makeGreen"), userInfo: nil, repeats: true)
+        makeGreen()
+         greenTimer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: Selector("makeGreen"), userInfo: nil, repeats: true)
 
         super.viewDidLoad()
         
         
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        greenTimer.invalidate()
+    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -34,9 +43,10 @@ class ForestView: UIViewController {
             if light.lightState!.reachable == 0 {
                 continue
             }
+
             
             let lightState = PHLightState()
-            
+        
             //      if light.type.value == DIM_LIGHT.rawValue {
             //        // Lux bulbs just get a random brightness
             //        lightState.brightness = Int(arc4random()) % 254

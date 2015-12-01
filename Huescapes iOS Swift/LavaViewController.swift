@@ -7,16 +7,25 @@
 
 import UIKit
 
+
+
 class LavaViewController: UIViewController {
     
-    
+    var redTimer = NSTimer()
+
     
     override func viewDidLoad() {
-        var makeRedTimer = NSTimer.scheduledTimerWithTimeInterval(5.0, target: self, selector: Selector("makeRed"), userInfo: nil, repeats: true)
+        makeRed()
+        redTimer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: Selector("makeRed"), userInfo: nil, repeats: true)
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
     }
+    
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+redTimer.invalidate()    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
