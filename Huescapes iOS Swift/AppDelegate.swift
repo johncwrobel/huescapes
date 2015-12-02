@@ -280,7 +280,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, BridgeSelectionViewContro
   
   /// Shows an overlay over the whole screen with a black box with spinner and loading text in the middle
   /// :param: text The text to display under the spinner
-  func showLoadingViewWithText(text:String) {
+  public func showLoadingViewWithText(text:String) {
     // First remove
     removeLoadingView()
     
